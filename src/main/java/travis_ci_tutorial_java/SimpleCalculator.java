@@ -11,9 +11,12 @@ public class SimpleCalculator {
 		return a * b;
 	}
 	public int divide(int a, int b) {
-		if (b == 0)
-			throw new ArithmeticException("can't divide by zero");
-		else
-			return a / b;
+		int c = 0;
+		try {
+			c = a / b;
+		}catch(ArithmeticException e) {
+			System.out.println("can't divide by 0");
+		}
+		return c;
 	}
 }
