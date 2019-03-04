@@ -10,7 +10,7 @@ public class SimpleCalculator {
 	public int multiply(int a, int b) {
 		return a * b;
 	}
-	public int divide(int a, int b) {
+	/*public int divide(int a, int b) {
 		int c = 0;
 		try {
 			c = a / b;
@@ -18,5 +18,8 @@ public class SimpleCalculator {
 			System.out.println("can't divide by 0");
 		}
 		return c;
+	} */
+	public int divide(int a, int b) {
+		return a/b;
 	}
 }
