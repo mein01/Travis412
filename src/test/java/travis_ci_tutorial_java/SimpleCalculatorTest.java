@@ -26,4 +26,9 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.divide(10, 5), 2);
 	}
+	@Test
+	public void testDivde() {
+		SimpleCalculator calc =  new SimpleCalculator();
+		assertEquals(calc.divide(10, 0), 0);
+	}
 }
